@@ -83,7 +83,7 @@ author:
   name             : "Jesse Comer"
   avatar           : "profile.png"
   bio              : 
-  location         : "Philadelphia, PA"
+  location         : 
   employer         : "University of Pennsylvania"
   researchgate     : 
   uri              :
@@ -224,15 +224,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _talks
   - scope:
       path: ""

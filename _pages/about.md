@@ -8,3 +8,4 @@ redirect_from:
   - /about.html
 ---
 
+I am a first-year Ph.D. student in the Computer and Information Science department at the University of Pennsylvania. My research interests are in theoretical computer science and mathematical logic.

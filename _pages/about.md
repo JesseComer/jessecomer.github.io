@@ -12,5 +12,5 @@ I am a first-year Ph.D. student in the Computer and Information Science departme
 
 Education
 * M.Sc., Computer Science, University of Texas at Austin, 2023
-* * M.S., Logic, University of Amsterdam, 2023
-* * B.A., Economics, University of California, Los Angeles, 2016
+* M.S., Logic, University of Amsterdam, 2023
+* B.A., Economics, University of California, Los Angeles, 2016

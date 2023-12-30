@@ -5,23 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
-<h2>Journal Articles</h2>
+<h2>Conference Publications</h2>
 {% for post in site.publications reversed %}
-  {% if post.pubtype == 'journal' %}
+  {% if post.pubtype == 'confpaper' %}
       {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
-<h2>Conference Papers</h2>
+<h2>Talks</h2>
 {% for post in site.publications reversed %}
-  {% if post.pubtype == 'conference' %}
-      {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
-
-<h2>Academic</h2>
-{% for post in site.publications reversed %}
-  {% if post.pubtype == 'academic' %}
+  {% if post.pubtype == 'talk' %}
       {% include archive-single.html %}
   {% endif %}
 {% endfor %}

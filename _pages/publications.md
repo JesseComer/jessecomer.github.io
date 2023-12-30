@@ -12,6 +12,13 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
+<h2>Master's Thesis</h2>
+{% for post in site.publications reversed %}
+  {% if post.pubtype == 'thesis' %}
+      {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 <h2>Talks</h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'talk' %}

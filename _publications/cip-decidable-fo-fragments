@@ -1,6 +1,7 @@
 ---
 title: "Craig Interpolation for Decidable First-Order Fragments"
 collection: publications
+pubtype: confpaper
 authors: B. ten Cate, J. Comer
 venue: FoSSaCS 2024
 paperurl: 'https://arxiv.org/abs/2310.08689'

@@ -11,7 +11,7 @@ redirect_from:
 I am a first-year Ph.D. student in the Computer and Information Science department at the University of Pennsylvania.
 
 <p> <strong> Research Interests </strong> <br>
-(Finite) Model Theory, Computational Complexity </p>
+(Finite) Model Theory, Computational Complexity, Algorithms, Learning Theory </p>
 
 <p> <strong> Education </strong> <br>
 - M.S., Computer Science. University of Texas at Austin, 2023. <br>

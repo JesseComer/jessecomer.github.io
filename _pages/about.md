@@ -14,10 +14,10 @@ I am a first-year Ph.D. student in the Computer and Information Science departme
 (Finite) Model Theory, Computational Complexity, Algorithms, Learning Theory </p>
 
 <p> <strong> Education </strong> <br>
-- M.S., Computer Science. University of Texas at Austin, 2023. <br>
-- M.Sc., Logic. University of Amsterdam, 2023. <br>
-- B.A., Economics. University of California, Los Angeles, 2016. </p>
+M.S., Computer Science. University of Texas at Austin, 2023. <br>
+M.Sc., Logic. University of Amsterdam, 2023. <br>
+B.A., Economics. University of California, Los Angeles, 2016. </p>
 
 <p> <strong> Teaching </strong> <br>
-- Algorithms. University of Texas at Austin, Spring 2023. </p>
+Algorithms. University of Texas at Austin, Spring 2023. </p>
 

@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jesse Comer"
+title                    : 
 title_separator          : "-"
 name                     : &name "Jesse"
 description              : &description "Graduate Student"

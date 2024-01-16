@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in the Computer and Information Science department at the University of Pennsylvania.
+I am a Ph.D. student in the Computer and Information Science department at the University of Pennsylvania.
 
 <p> <strong> Research Interests </strong> <br>
 (Finite) Model Theory, Computational Complexity, Algorithms, Learning Theory </p>

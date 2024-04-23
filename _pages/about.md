@@ -20,4 +20,4 @@ B.A., Economics. University of California, Los Angeles, 2016. </p>
 
 <p> <strong> Teaching </strong> <br>
 Mathematical Foundations of Computer Science (CIS 1600). University of Pennsylvania, Summer 2024. <br>
-Algorithms (CS388G, TA). University of Texas at Austin, Spring 2023. </p>
+Algorithms: Techniques and Theory (CS388G, TA). University of Texas at Austin, Spring 2023. </p>

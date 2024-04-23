@@ -19,4 +19,5 @@ M.Sc., Logic. University of Amsterdam, 2023. <br>
 B.A., Economics. University of California, Los Angeles, 2016. </p>
 
 <p> <strong> Teaching </strong> <br>
+Mathematical Foundations of Computer Science. University of Pennsylvania, Summer 2024. </p>
 Algorithms (TA). University of Texas at Austin, Spring 2023. </p>

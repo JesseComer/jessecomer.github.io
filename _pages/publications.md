@@ -5,28 +5,28 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p> <strong> Proceeding Papers </strong> <br>
+<h2> Proceeding Papers </h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'confpaper' %}
       {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
-<p> <strong> Manuscripts </strong> <br>
+<h2> Manuscripts </h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'manuscript' %}
       {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
-<p> <strong> Master's Thesis </strong> <br>
+<h2> Master's Thesis </h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'thesis' %}
       {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
-<p> <strong> Talks </strong> <br>
+<h2> Talks </h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'talk' %}
       {% include archive-single.html %}

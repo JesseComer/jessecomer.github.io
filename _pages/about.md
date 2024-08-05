@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in the Computer and Information Science department at the University of Pennsylvania. My advisors are <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. Previously, I was advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a> while doing my Master's degree at the University of Amsterdam. My contact information can be found on my <a href="https://jessecomer.github.io/files/CV.pdf">CV</a>.
+I am a Ph.D. candidate in the Computer and Information Science department at the University of Pennsylvania, where I am advised by <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. While doing my Master's degree at the University of Amsterdam, I was advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a>. My contact information can be found on my <a href="https://jessecomer.github.io/files/CV.pdf">CV</a>.
 
 <p> <strong> Research Interests </strong> <br>
 Database Theory, (Finite) Model Theory, Computational Complexity

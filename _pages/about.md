@@ -11,7 +11,7 @@ redirect_from:
 I am a Ph.D. student in the Computer and Information Science department at the University of Pennsylvania, where I am advised by <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. Previously, at the University of Amsterdam, I had the privilege of being advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a>. You can find my contact information in my <a href="https://jessecomer.github.io/files/CV.pdf">CV</a>.
 
 <p> <strong> Research Interests </strong> <br>
-Database Theory, (Finite) Model Theory, Computational Complexity
+Databases, Algorithms, Machine Learning, Computational Complexity
 
 <p> <strong> Education </strong> <br>
 M.S., Computer Science. University of Texas at Austin, 2023. <br>

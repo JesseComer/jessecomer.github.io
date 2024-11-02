@@ -1,5 +1,7 @@
 {% include base_path %}
 
+<div style="margin-bottom: 0.5em;">
+
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
@@ -66,4 +68,5 @@
     {% endif %}
 
   </article>
+</div>
 </div>

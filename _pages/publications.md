@@ -5,8 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-<div style="margin-bottom: 0.5em;">
-
   <h3> Conference Papers </h3>
   {% for post in site.publications reversed %}
     {% if post.pubtype == 'confpaper' %}
@@ -34,5 +32,3 @@ author_profile: true
         {% include archive-single.html %}
     {% endif %}
   {% endfor %}
-
-</div>

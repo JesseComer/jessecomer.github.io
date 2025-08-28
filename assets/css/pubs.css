@@ -16,10 +16,10 @@ ol.pub-list {
 
 /* Section headers (keep as before) */
 .pub-section {
-  font-size: 1.10rem;
+  font-size: 1.15rem;
   text-decoration: underline;
   text-underline-offset: 2px;
-  margin: 1rem 0 0.4rem;
+  margin: 1rem 0 0.75rem;
 }
 
 /* Same font size for both lines */

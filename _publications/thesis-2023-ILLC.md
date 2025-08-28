@@ -4,6 +4,6 @@ collection: publications
 pubtype: thesis
 authors: J. Comer
 date: 2023-07-12
-venue: ILLC, University of Amsterdam
+venue: ILLC, University of Amsterdam (2023)
 pdf: 'https://eprints.illc.uva.nl/id/eprint/2263/1/MoL-2023-14.text.pdf'
 ---

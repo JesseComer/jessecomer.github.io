@@ -1,7 +1,6 @@
 <!-- _includes/pub-item.html -->
 <li class="pub-item">
   {% assign p = include.post %}
-  {% assign year = p.date | date: "%Y" %}
 
   <!-- Line 1: bold, non-clickable title + links -->
   <div class="pub-top">
@@ -17,6 +16,7 @@
         [<a href="{{ arxiv_url }}">arXiv</a>]
       {% endif %}
 
+      {%- comment -%} Prefer jdoi; else cdoi; else no DOI {%- endcomment -%}
       {% assign doi_url = nil %}
       {% if p.jdoi %}
         {% assign doi_url = p.jdoi %}
@@ -29,20 +29,36 @@
         {% endunless %}
         [<a href="{{ doi_url }}">DOI</a>]
       {% endif %}
+
+      {%- comment -%} Slides: accept absolute, www.*, or relative paths {%- endcomment -%}
+      {% if p.slides %}
+        {% assign slides_raw = p.slides %}
+        {% assign slides_url = slides_raw %}
+        {% if slides_raw contains '://' %}
+          {% comment %} absolute URL; leave as-is {% endcomment %}
+        {% elsif slides_raw contains 'www.' %}
+          {% assign slides_url = 'https://' | append: slides_raw %}
+        {% else %}
+          {% assign firstchar = slides_raw | slice: 0, 1 %}
+          {% if firstchar == '/' %}
+            {% assign slides_url = slides_raw | relative_url %}
+          {% else %}
+            {% capture slides_path %}/{{ slides_raw }}{% endcapture %}
+            {% assign slides_url = slides_path | relative_url %}
+          {% endif %}
+        {% endif %}
+        [<a href="{{ slides_url }}">Slides</a>]
+      {% endif %}
     </span>
   </div>
 
-  <!-- Line 2: authors, venue, year (no auto-bolding of your name) -->
+  <!-- Line 2: authors, venue (year included in venue if desired) -->
   <div class="pub-meta">
-    {% assign sep = "" %}
     {% if p.authors %}
-      <span class="pub-authors">{{ p.authors }}</span>.{% assign sep = " " %}
+      <span class="pub-authors">{{ p.authors }}</span>.
     {% endif %}
     {% if p.venue %}
-      {{ sep }}<span class="pub-venue"><em>{{ p.venue }}</em></span>.{% assign sep = " " %}
-    {% endif %}
-    {% if p.date %}
-      {{ sep }}<span class="pub-year">{{ year }}</span>.
+      <span class="pub-venue"><em> {{ p.venue }}</em></span>.
     {% endif %}
   </div>
 </li>

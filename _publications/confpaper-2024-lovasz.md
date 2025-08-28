@@ -4,6 +4,6 @@ collection: publications
 pubtype: confpaper
 authors: J. Comer
 date: 2024-03-29
-venue: AiML
-pdf: 'http://jessecomer.github.io/files/lovasz-paper.pdf'
+venue: AiML 2024
+arxiv: 2404.15421
 ---

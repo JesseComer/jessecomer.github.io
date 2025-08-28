@@ -5,6 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 
+<h3 class="pub-section">Journal Articles</h3>
+{% assign journals = site.publications | where: "pubtype", "journal" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in journals %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
+
 <h3 class="pub-section">Conference Papers</h3>
 {% assign conf = site.publications | where: "pubtype", "confpaper" | sort: "date" | reverse %}
 <ol class="pub-list">

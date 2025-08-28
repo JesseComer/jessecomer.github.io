@@ -1,0 +1,48 @@
+<!-- _includes/pub-item.html -->
+<li class="pub-item">
+  {% assign p = include.post %}
+  {% assign year = p.date | date: "%Y" %}
+
+  <!-- Line 1: bold, non-clickable title + links -->
+  <div class="pub-top">
+    <strong class="pub-title">{{ p.title }}</strong>
+    <span class="pub-links">
+      {% if p.pdf %} [<a href="{{ p.pdf }}">PDF</a>]{% endif %}
+
+      {% if p.arxiv %}
+        {% assign arxiv_url = p.arxiv %}
+        {% unless arxiv_url contains '://' %}
+          {% assign arxiv_url = 'https://arxiv.org/abs/' | append: arxiv_url %}
+        {% endunless %}
+        [<a href="{{ arxiv_url }}">arXiv</a>]
+      {% endif %}
+
+      {% assign doi_url = nil %}
+      {% if p.jdoi %}
+        {% assign doi_url = p.jdoi %}
+      {% elsif p.cdoi %}
+        {% assign doi_url = p.cdoi %}
+      {% endif %}
+      {% if doi_url %}
+        {% unless doi_url contains '://' %}
+          {% assign doi_url = 'https://doi.org/' | append: doi_url %}
+        {% endunless %}
+        [<a href="{{ doi_url }}">DOI</a>]
+      {% endif %}
+    </span>
+  </div>
+
+  <!-- Line 2: authors, venue, year (no auto-bolding of your name) -->
+  <div class="pub-meta">
+    {% assign sep = "" %}
+    {% if p.authors %}
+      <span class="pub-authors">{{ p.authors }}</span>.{% assign sep = " " %}
+    {% endif %}
+    {% if p.venue %}
+      {{ sep }}<span class="pub-venue"><em>{{ p.venue }}</em></span>.{% assign sep = " " %}
+    {% endif %}
+    {% if p.date %}
+      {{ sep }}<span class="pub-year">{{ year }}</span>.
+    {% endif %}
+  </div>
+</li>

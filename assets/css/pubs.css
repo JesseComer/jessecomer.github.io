@@ -1,0 +1,42 @@
+/* Publications page tweaks: compact spacing + uniform text size */
+
+/* Ordered list numbers + alignment */
+ol.pub-list {
+  list-style: decimal;
+  list-style-position: outside;
+  padding-left: 1.35rem;   /* slight indent so text aligns after number */
+  margin: 0.25rem 0 0.5rem;
+}
+
+/* Each publication block: tighter vertical rhythm */
+.pub-item {
+  margin: 0.15rem 0;       /* ↓ from 0.5rem */
+  line-height: 1.25;       /* compact but readable */
+}
+
+/* Section headers (keep as before) */
+.pub-section {
+  font-size: 1.10rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 1rem 0 0.4rem;
+}
+
+/* Same font size for both lines */
+.pub-title {               /* title text */
+  font-size: 1em;          /* same as body */
+  font-weight: 700;
+}
+.pub-top { margin: 0; }
+.pub-meta {
+  font-size: 1em;          /* same as title */
+  margin-top: 0.05rem;     /* tiny gap between lines */
+}
+
+/* Links: underline only on hover */
+.pub-list a { text-decoration: none; }
+.pub-list a:hover,
+.pub-list a:focus {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

@@ -5,30 +5,34 @@ permalink: /publications/
 author_profile: true
 ---
 
-  <h3> Conference Papers </h3>
-  {% for post in site.publications reversed %}
-    {% if post.pubtype == 'confpaper' %}
-        {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
+<h3 class="pub-section">Conference Papers</h3>
+{% assign conf = site.publications | where: "pubtype", "confpaper" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in conf %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
 
-  <h3> Manuscripts </h3>
-  {% for post in site.publications reversed %}
-    {% if post.pubtype == 'manuscript' %}
-        {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
+<h3 class="pub-section">Manuscripts</h3>
+{% assign mans = site.publications | where: "pubtype", "manuscript" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in mans %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
 
-  <h3> Master's Thesis </h3>
-  {% for post in site.publications reversed %}
-    {% if post.pubtype == 'thesis' %}
-        {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
+<h3 class="pub-section">Master's Thesis</h3>
+{% assign theses = site.publications | where: "pubtype", "thesis" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in theses %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
 
-  <h3> Talks </h3>
-  {% for post in site.publications reversed %}
-    {% if post.pubtype == 'talk' %}
-        {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
+<h3 class="pub-section">Talks</h3>
+{% assign talks = site.publications | where: "pubtype", "talk" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in talks %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>

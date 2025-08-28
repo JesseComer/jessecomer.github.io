@@ -4,6 +4,6 @@ collection: publications
 pubtype: talk
 authors: B. ten Cate, J. Comer
 date: 2023-06-25
-venue: DPFO 2024
-paperurl: 'http://jessecomer.github.io/files/cip-gf-workshop-slides.pdf'
+venue: DPFO
+pdf: 'http://jessecomer.github.io/files/cip-gf-workshop-slides.pdf'
 ---

@@ -4,6 +4,6 @@ collection: publications
 pubtype: confpaper
 authors: M. Abo Khamis, J. Comer, P. Kolaitis, S. Roy, V. Tannen
 date: 2026-05-31
-venue: PODS 2026
+venue: PODS 2026 (To appear)
 arxiv: 2506.10238
 ---

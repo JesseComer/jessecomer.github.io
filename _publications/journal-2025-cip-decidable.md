@@ -4,6 +4,6 @@ collection: publications
 pubtype: journal
 authors: B. ten Cate, J. Comer
 date: 2024-01-16
-venue: LMCS (To appear)
+venue: "LMCS 21(3): 22:1-22:23"
 arxiv: 2310.08689
 ---

@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in the Computer and Information Science department at the University of Pennsylvania, where I am advised by <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. Previously, at the University of Amsterdam, I had the privilege of being advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a>. You can find my contact information in my <a href="{{ '/files/cv-20250901.pdf' | relative_url }}">CV</a>.
+I am a Ph.D. candidate in the Computer and Information Science department at the University of Pennsylvania, where I am advised by <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. Previously, at the University of Amsterdam, I had the privilege of being advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a>. You can find my contact information in my <a href="/files/cv-20250901.pdf">CV</a>.
 
 <p> <strong> Research Interests </strong> <br>
 I am broadly interested in applications of logic in computer science. There are currently two major strands to my research. The first is the specification and verification of <em>resilience properties</em> in critical software and cyber-physical systems. The second is in the development of algorithms for the repair of databases and database queries. In both strands, the fundamental underlying tools are <em>computational logic</em> and <em>formal methods</em>.

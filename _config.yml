@@ -127,6 +127,7 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - .github
   - CHANGELOG
   - Capfile
   - Gemfile

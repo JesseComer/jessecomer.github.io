@@ -43,11 +43,3 @@ author_profile: true
   {% include pub-item.html post=post %}
 {% endfor %}
 </ol>
-
-<h3 class="pub-section">Manuscripts</h3>
-{% assign mans = site.publications | where: "pubtype", "manuscript" | sort: "date" | reverse %}
-<ol class="pub-list">
-{% for post in mans %}
-  {% include pub-item.html post=post %}
-{% endfor %}
-</ol>

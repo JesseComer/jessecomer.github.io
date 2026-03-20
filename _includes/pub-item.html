@@ -16,14 +16,9 @@
         [<a href="{{ arxiv_url }}">arXiv</a>]
       {% endif %}
 
-      {%- comment -%} Prefer jdoi; else cdoi; else no DOI {%- endcomment -%}
-      {% assign doi_url = nil %}
-      {% if p.jdoi %}
-        {% assign doi_url = p.jdoi %}
-      {% elsif p.cdoi %}
-        {% assign doi_url = p.cdoi %}
-      {% endif %}
-      {% if doi_url %}
+      {%- comment -%} Prefer journal DOI on line 1; otherwise conference DOI {%- endcomment -%}
+      {% if p.jdoi or p.cdoi %}
+        {% assign doi_url = p.jdoi | default: p.cdoi %}
         {% unless doi_url contains '://' %}
           {% assign doi_url = 'https://doi.org/' | append: doi_url %}
         {% endunless %}
@@ -59,6 +54,14 @@
     {% endif %}
     {% if p.venue %}
       <span class="pub-venue"><em> {{ p.venue }}</em></span>.
+    {% endif %}
+    {% if p.pubtype == 'journal' and p.cdoi %}
+      {% assign cdoi_url = p.cdoi %}
+      {% unless cdoi_url contains '://' %}
+        {% assign cdoi_url = 'https://doi.org/' | append: cdoi_url %}
+      {% endunless %}
+      {% assign extended_label = p.cvenue | default: p.extended_from | default: 'conference version' %}
+      Extended version of <a href="{{ cdoi_url }}">{{ extended_label }}</a>.
     {% endif %}
   </div>
 </li>

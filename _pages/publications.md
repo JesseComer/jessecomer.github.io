@@ -28,14 +28,6 @@ author_profile: true
 {% endfor %}
 </ol>
 
-<h3 class="pub-section">Talks</h3>
-{% assign talks = site.publications | where: "pubtype", "talk" | sort: "date" | reverse %}
-<ol class="pub-list">
-{% for post in talks %}
-  {% include pub-item.html post=post %}
-{% endfor %}
-</ol>
-
 <h3 class="pub-section">Master's Thesis</h3>
 {% assign theses = site.publications | where: "pubtype", "thesis" | sort: "date" | reverse %}
 <ol class="pub-list">

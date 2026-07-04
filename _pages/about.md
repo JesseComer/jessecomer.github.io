@@ -11,7 +11,7 @@ redirect_from:
 I am a Ph.D. candidate in the Computer and Information Science department at the University of Pennsylvania, where I am advised by <a href="https://www.cis.upenn.edu/~scedrov/">Andre Scedrov</a> and <a href="https://www.cis.upenn.edu/~val/home.html">Val Tannen</a>. Previously, at the University of Amsterdam, I had the privilege of being advised by <a href="https://staff.fnwi.uva.nl/b.d.tencate/">Balder ten Cate</a>. My contact information is in my <a href="/files/cv.pdf">CV</a>.
 
 <p> <strong> Research </strong> <br>
-I am broadly interested in applications of logic in computer science. There are currently two major strands to my research. The first is the specification and verification of <em>resilience properties</em> in critical software and cyber-physical systems. The second is in the development of algorithms for the repair of databases and database queries. In both strands, the fundamental underlying tools are <em>computational logic</em> and <em>formal methods</em>.
+I am broadly interested in <strong><em>logic in computer science</em></strong>, especially the feasibility and limitations of machine reasoning about formal logical properties of computational systems. I use <em>computational logic</em> and <em>formal methods</em> to specify, analyze, and verify <em>resilient</em> and <em>reliable</em> systems. My current research focuses on relational program verification for data-centric systems, combining AI-guided search with the reliability of symbolic verification.</p>
 
 <p> <strong> Education </strong> <br>
 M.S., Computer Science. University of Texas at Austin, 2023. <br>

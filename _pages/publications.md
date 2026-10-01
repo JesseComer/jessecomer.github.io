@@ -36,6 +36,14 @@ author_profile: true
 {% endfor %}
 </ol>
 
+<h3 class="pub-section">Manuscripts</h3>
+{% assign manuscripts = site.publications | where: "pubtype", "manuscript" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in manuscripts %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
+
 <h3 class="pub-section">Master's Thesis</h3>
 {% assign theses = site.publications | where: "pubtype", "thesis" | sort: "date" | reverse %}
 <ol class="pub-list">

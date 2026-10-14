@@ -4,6 +4,14 @@ permalink: /publications/
 author_profile: true
 ---
 
+<h3 class="pub-section">Preprints</h3>
+{% assign preprints = site.publications | where: "pubtype", "preprint" | sort: "date" | reverse %}
+<ol class="pub-list">
+{% for post in preprints %}
+  {% include pub-item.html post=post %}
+{% endfor %}
+</ol>
+
 <h3 class="pub-section">Journal Articles</h3>
 {% assign journals = site.publications | where: "pubtype", "journal" | sort: "date" | reverse %}
 <ol class="pub-list">
@@ -32,14 +40,6 @@ author_profile: true
 {% assign bkchap = site.publications | where: "pubtype", "book_chapter" | sort: "date" | reverse %}
 <ol class="pub-list">
 {% for post in bkchap %}
-  {% include pub-item.html post=post %}
-{% endfor %}
-</ol>
-
-<h3 class="pub-section">Manuscripts</h3>
-{% assign manuscripts = site.publications | where: "pubtype", "manuscript" | sort: "date" | reverse %}
-<ol class="pub-list">
-{% for post in manuscripts %}
   {% include pub-item.html post=post %}
 {% endfor %}
 </ol>

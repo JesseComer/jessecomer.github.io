@@ -1,19 +1,24 @@
 <!-- _includes/pub-item.html -->
-<li class="pub-item">
-  {% assign p = include.post %}
+{% assign p = include.post %}
+<li class="pub-item"{% if p.number %} value="{{ p.number | escape }}"{% endif %}>
 
   <!-- Line 1: bold, non-clickable title + links -->
   <div class="pub-top">
-    <strong class="pub-title">{{ p.title }}</strong>
+    <strong class="pub-title">{{ p.title | escape }}</strong>
     <span class="pub-links">
-      {% if p.pdf %} [<a href="{{ p.pdf }}">PDF</a>]{% endif %}
+      {% if p.links %}
+        {% for link in p.links %}
+          [<a href="{{ link.url | escape }}">{{ link.label | escape }}</a>]
+        {% endfor %}
+      {% else %}
+      {% if p.pdf %} [<a href="{{ p.pdf | escape }}">PDF</a>]{% endif %}
 
       {% if p.arxiv %}
         {% assign arxiv_url = p.arxiv %}
         {% unless arxiv_url contains '://' %}
           {% assign arxiv_url = 'https://arxiv.org/abs/' | append: arxiv_url %}
         {% endunless %}
-        [<a href="{{ arxiv_url }}">arXiv</a>]
+        [<a href="{{ arxiv_url | escape }}">arXiv</a>]
       {% endif %}
 
       {%- comment -%} Prefer journal DOI on line 1; otherwise conference/generic DOI {%- endcomment -%}
@@ -22,7 +27,7 @@
         {% unless doi_url contains '://' %}
           {% assign doi_url = 'https://doi.org/' | append: doi_url %}
         {% endunless %}
-        [<a href="{{ doi_url }}">DOI</a>]
+        [<a href="{{ doi_url | escape }}">DOI</a>]
       {% endif %}
 
       {%- comment -%} Slides: accept absolute, www.*, or relative paths {%- endcomment -%}
@@ -42,7 +47,8 @@
             {% assign slides_url = slides_path | relative_url %}
           {% endif %}
         {% endif %}
-        [<a href="{{ slides_url }}">Slides</a>]
+        [<a href="{{ slides_url | escape }}">Slides</a>]
+      {% endif %}
       {% endif %}
     </span>
   </div>
@@ -50,18 +56,25 @@
   <!-- Line 2: authors, venue (year included in venue if desired) -->
   <div class="pub-meta">
     {% if p.authors %}
-      <span class="pub-authors">{{ p.authors }}</span>.
+      <span class="pub-authors">{{ p.authors | escape }}</span>.
     {% endif %}
     {% if p.venue %}
-      <span class="pub-venue"><em> {{ p.venue }}</em></span>.
+      <span class="pub-venue"><em> {{ p.venue | escape }}</em></span>.
     {% endif %}
-    {% if p.pubtype == 'journal' and p.cdoi %}
+    {% if p.extended_from.venue %}
+      Extended version of <a href="{{ p.extended_from.url | escape }}">{{ p.extended_from.venue | escape }}</a>.
+    {% elsif p.pubtype == 'journal' and p.cdoi %}
       {% assign cdoi_url = p.cdoi %}
       {% unless cdoi_url contains '://' %}
         {% assign cdoi_url = 'https://doi.org/' | append: cdoi_url %}
       {% endunless %}
       {% assign extended_label = p.cvenue | default: p.extended_from | default: 'conference version' %}
-      Extended version of <a href="{{ cdoi_url }}">{{ extended_label }}</a>.
+      Extended version of <a href="{{ cdoi_url | escape }}">{{ extended_label | escape }}</a>.
     {% endif %}
   </div>
+  {% if p.committee %}
+    <div class="pub-meta pub-committee">
+      Committee: {% for member in p.committee %}{{ member.name | escape }}{% if member.role %} ({{ member.role | escape }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+    </div>
+  {% endif %}
 </li>

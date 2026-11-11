@@ -6,12 +6,16 @@
   "pubtype": "book_chapter",
   "authors": "B. ten Cate, J. Comer",
   "date": "2025-10-01",
-  "venue": "In B. ten Cate, J. Jung, P. Koopmann, C. Wernhard, and F. Wolter (eds.), Theory and Applications of Craig Interpolation. Ubiquity Press, 2026 (To appear)",
+  "venue": "In B. ten Cate, J. Jung, P. Koopmann, C. Wernhard, and F. Wolter (eds.), Theory and Applications of Craig Interpolation. Ubiquity Press, 2026",
   "number": 8,
   "links": [
     {
       "label": "arXiv",
       "url": "https://arxiv.org/abs/2510.03822"
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.5334/bdg.b"
     }
   ]
 }
